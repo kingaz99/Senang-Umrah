@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AmalanSelepasHome">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/amalan_selepas_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027"
+        app:srcCompat="@drawable/buttonback" />
+
+        <ImageView
+            android:id="@+id/navigation_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.956"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.027"
+            app:srcCompat="@drawable/menubutton" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Amalan Selepas Umrah"
+        android:textSize="18sp"
+        android:textColor="#1A1B23"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.116" />
+
+        <RelativeLayout
+            android:id="@+id/relative2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="100dp"
+            android:paddingBottom="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ScrollView
+                android:id="@+id/scroll1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="0dp">
+
+                <androidx.gridlayout.widget.GridLayout
+                    android:id="@+id/grid1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageView
+                        android:id="@+id/box1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="box1"
+                        app:layout_column="0"
+                        app:layout_row="0"
+                        app:srcCompat="@drawable/square" />
+
+                    <ImageView
+                        android:id="@+id/imageview1"
+                        android:layout_width="59dp"
+                        android:layout_height="59dp"
+                        android:layout_marginTop="20dp"
+                        android:contentDescription="imageview1"
+                        app:layout_column="0"
+                        app:layout_gravity="center_horizontal"
+                        app:layout_row="0"
+                        app:srcCompat="@drawable/gambar_contoh"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <TextView
+                        android:id="@+id/aktiviti1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="55dp"
+                        android:contentDescription="aktiviti1"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="aktiviti 1"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        app:layout_column="0"
+                        app:layout_gravity="bottom|center_horizontal"
+                        app:layout_row="0" />
+
+                    <ImageView
+                        android:id="@+id/button_bg1"
+                        android:layout_width="86dp"
+                        android:layout_height="34dp"
+                        android:layout_marginBottom="15dp"
+                        android:backgroundTint="#00FFFFFF"
+                        android:contentDescription="button_bg3"
+                        app:layout_column="0"
+                        app:layout_gravity="bottom|center_horizontal"
+                        app:layout_row="0"
+                        app:srcCompat="@drawable/bg_button" />
+
+                    <TextView
+                        android:id="@+id/button_text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:contentDescription="lihat"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="lihat"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        app:layout_column="0"
+                        app:layout_gravity="bottom|center_horizontal"
+                        app:layout_row="0" />
+
+                    <ImageView
+                        android:id="@+id/ring1"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginBottom="82.5dp"
+                        android:contentDescription="ring1"
+                        app:layout_column="0"
+                        app:layout_gravity="bottom|center_horizontal"
+                        app:layout_row="0"
+                        app:srcCompat="@drawable/ring" />
+
+                    <ImageView
+                        android:id="@+id/box2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginBottom="5dp"
+                        android:contentDescription="box2"
+                        app:layout_column="1"
+                        app:layout_row="0"
+                        app:srcCompat="@drawable/square"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="59dp"
+                        android:layout_height="59dp"
+                        android:layout_marginStart="75dp"
+                        android:layout_marginTop="20dp"
+                        android:contentDescription="imageview2"
+                        app:layout_column="1"
+                        app:layout_row="0"
+                        app:srcCompat="@drawable/gambar_contoh" />
+
+                    <ImageView
+                        android:id="@+id/ring2"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginStart="72dp"
+                        android:layout_marginTop="17dp"
+                        android:contentDescription="ring2"
+                        app:layout_column="1"
+                        app:layout_row="0"
+                        app:srcCompat="@drawable/ring" />
+
+                    <TextView
+                        android:id="@+id/aktiviti2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:layout_marginBottom="55dp"
+                        android:contentDescription="aktiviti2"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="aktiviti 2"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        app:layout_column="1"
+                        app:layout_gravity="bottom"
+                        app:layout_row="0" />
+
+                    <ImageView
+                        android:id="@+id/button_bg2"
+                        android:layout_width="86dp"
+                        android:layout_height="34dp"
+                        android:layout_marginStart="63dp"
+                        android:layout_marginBottom="15dp"
+                        android:contentDescription="button_bg2"
+                        app:layout_column="1"
+                        app:layout_gravity="bottom"
+                        app:layout_row="0"
+                        app:srcCompat="@drawable/bg_button" />
+
+                    <TextView
+                        android:id="@+id/buttontext2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginBottom="20dp"
+                        android:contentDescription="lihat"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="lihat"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        app:layout_column="1"
+                        app:layout_gravity="bottom"
+                        app:layout_row="0" />
+
+                    <ImageView
+                        android:id="@+id/box3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:contentDescription="box3"
+                        app:layout_column="0"
+                        app:layout_row="1"
+                        app:srcCompat="@drawable/square"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <ImageView
+                        android:id="@+id/imageview3"
+                        android:layout_width="59dp"
+                        android:layout_height="59dp"
+                        android:layout_marginBottom="85dp"
+                        android:contentDescription="imageview3"
+                        app:layout_column="0"
+                        app:layout_gravity="bottom|center_horizontal"
+                        app:layout_row="1"
+                        app:srcCompat="@drawable/gambar_contoh"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <TextView
+                        android:id="@+id/aktiviti3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="55dp"
+                        android:contentDescription="aktiviti3"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="aktiviti 3"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        app:layout_column="0"
+                        app:layout_gravity="bottom|center_horizontal"
+                        app:layout_row="1" />
+
+                    <ImageView
+                        android:id="@+id/button_bg3"
+                        android:layout_width="86dp"
+                        android:layout_height="34dp"
+                        android:layout_marginBottom="15dp"
+                        android:backgroundTint="#00FFFFFF"
+                        android:contentDescription="button_bg3"
+                        app:layout_column="0"
+                        app:layout_gravity="bottom|center_horizontal"
+                        app:layout_row="1"
+                        app:srcCompat="@drawable/bg_button" />
+
+                    <TextView
+                        android:id="@+id/button_text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:contentDescription="lihat"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="lihat"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        app:layout_column="0"
+                        app:layout_gravity="bottom|center_horizontal"
+                        app:layout_row="1" />
+
+                    <ImageView
+                        android:id="@+id/ring3"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginBottom="82dp"
+                        android:contentDescription="ring3"
+                        app:layout_column="0"
+                        app:layout_gravity="bottom|center_horizontal"
+                        app:layout_row="1"
+                        app:srcCompat="@drawable/ring" />
+
+                    <ImageView
+                        android:id="@+id/box4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="20dp"
+                        android:contentDescription="box4"
+                        app:layout_column="1"
+                        app:layout_row="1"
+                        app:srcCompat="@drawable/square"
+                        tools:ignore="ImageContrastCheck,ImageContrastCheck" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="59dp"
+                        android:layout_height="59dp"
+                        android:layout_marginStart="75dp"
+                        android:layout_marginBottom="85dp"
+                        android:contentDescription="imageview4"
+                        app:layout_column="1"
+                        app:layout_gravity="bottom"
+                        app:layout_row="1"
+                        app:srcCompat="@drawable/gambar_contoh" />
+
+                    <ImageView
+                        android:id="@+id/ring4"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginStart="72dp"
+                        android:layout_marginBottom="82dp"
+                        android:contentDescription="ring4"
+                        app:layout_column="1"
+                        app:layout_gravity="bottom"
+                        app:layout_row="1"
+                        app:srcCompat="@drawable/ring" />
+
+                    <TextView
+                        android:id="@+id/aktiviti4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:layout_marginBottom="55dp"
+                        android:contentDescription="aktiviti4"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="aktiviti 4"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        app:layout_column="1"
+                        app:layout_gravity="bottom"
+                        app:layout_row="1" />
+
+                    <ImageView
+                        android:id="@+id/button_bg4"
+                        android:layout_width="86dp"
+                        android:layout_height="34dp"
+                        android:layout_marginStart="63dp"
+                        android:layout_marginBottom="15dp"
+                        android:contentDescription="buttonbg4"
+                        app:layout_column="1"
+                        app:layout_gravity="bottom"
+                        app:layout_row="1"
+                        app:srcCompat="@drawable/bg_button" />
+
+                    <TextView
+                        android:id="@+id/buttontext4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginBottom="20dp"
+                        android:contentDescription="lihat"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="lihat"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        app:layout_column="1"
+                        app:layout_gravity="bottom"
+                        app:layout_row="1" />
+
+                    <ImageView
+                        android:id="@+id/box5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:contentDescription="box5"
+                        app:layout_column="0"
+                        app:layout_row="2"
+                        app:srcCompat="@drawable/square"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <ImageView
+                        android:id="@+id/imageview5"
+                        android:layout_width="59dp"
+                        android:layout_height="59dp"
+                        android:layout_marginBottom="85dp"
+                        android:contentDescription="imageview5"
+                        app:layout_column="0"
+                        app:layout_gravity="bottom|center_horizontal"
+                        app:layout_row="2"
+                        app:srcCompat="@drawable/gambar_contoh"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <TextView
+                        android:id="@+id/aktiviti5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="55dp"
+                        android:contentDescription="aktiviti5"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="aktiviti 5"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        app:layout_column="0"
+                        app:layout_gravity="bottom|center_horizontal"
+                        app:layout_row="2" />
+
+                    <ImageView
+                        android:id="@+id/button_bg5"
+                        android:layout_width="86dp"
+                        android:layout_height="34dp"
+                        android:layout_marginBottom="15dp"
+                        android:backgroundTint="#00FFFFFF"
+                        android:contentDescription="button_bg5"
+                        app:layout_column="0"
+                        app:layout_gravity="bottom|center_horizontal"
+                        app:layout_row="2"
+                        app:srcCompat="@drawable/bg_button" />
+
+                    <TextView
+                        android:id="@+id/button_text5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:contentDescription="lihat"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="lihat"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        app:layout_column="0"
+                        app:layout_gravity="bottom|center_horizontal"
+                        app:layout_row="2" />
+
+                    <ImageView
+                        android:id="@+id/ring5"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginBottom="82dp"
+                        android:contentDescription="ring5"
+                        app:layout_column="0"
+                        app:layout_gravity="bottom|center_horizontal"
+                        app:layout_row="2"
+                        app:srcCompat="@drawable/ring" />
+
+                    <ImageView
+                        android:id="@+id/box6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="20dp"
+                        android:contentDescription="box6"
+                        app:layout_column="1"
+                        app:layout_row="2"
+                        app:srcCompat="@drawable/square"
+                        tools:ignore="ImageContrastCheck,ImageContrastCheck" />
+
+                    <ImageView
+                        android:id="@+id/gambar_contoh"
+                        android:layout_width="59dp"
+                        android:layout_height="59dp"
+                        android:layout_marginStart="75dp"
+                        android:layout_marginBottom="85dp"
+                        android:contentDescription="imageview6"
+                        app:layout_column="1"
+                        app:layout_gravity="bottom"
+                        app:layout_row="2"
+                        app:srcCompat="@drawable/gambar_contoh" />
+
+                    <ImageView
+                        android:id="@+id/ring6"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginStart="72dp"
+                        android:layout_marginBottom="82dp"
+                        android:contentDescription="ring6"
+                        app:layout_column="1"
+                        app:layout_gravity="bottom"
+                        app:layout_row="2"
+                        app:srcCompat="@drawable/ring" />
+
+                    <TextView
+                        android:id="@+id/aktiviti6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:layout_marginBottom="55dp"
+                        android:contentDescription="aktiviti6"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="aktiviti 6"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        app:layout_column="1"
+                        app:layout_gravity="bottom"
+                        app:layout_row="2" />
+
+                    <ImageView
+                        android:id="@+id/button_bg6"
+                        android:layout_width="86dp"
+                        android:layout_height="34dp"
+                        android:layout_marginStart="63dp"
+                        android:layout_marginBottom="15dp"
+                        android:contentDescription="button_bg6"
+                        app:layout_column="1"
+                        app:layout_gravity="bottom"
+                        app:layout_row="2"
+                        app:srcCompat="@drawable/bg_button" />
+
+                    <TextView
+                        android:id="@+id/buttontext6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginBottom="20dp"
+                        android:contentDescription="lihat"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="lihat"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        app:layout_column="1"
+                        app:layout_gravity="bottom"
+                        app:layout_row="2" />
+
+                    <ImageView
+                        android:id="@+id/box7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:contentDescription="box7"
+                        app:layout_column="0"
+                        app:layout_row="3"
+                        app:srcCompat="@drawable/square"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <ImageView
+                        android:id="@+id/imageview7"
+                        android:layout_width="59dp"
+                        android:layout_height="59dp"
+                        android:layout_marginBottom="85dp"
+                        android:contentDescription="imageview7"
+                        app:layout_column="0"
+                        app:layout_gravity="bottom|center_horizontal"
+                        app:layout_row="3"
+                        app:srcCompat="@drawable/gambar_contoh"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <TextView
+                        android:id="@+id/aktiviti7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="55dp"
+                        android:contentDescription="aktiviti7"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="aktiviti 7"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        app:layout_column="0"
+                        app:layout_gravity="bottom|center_horizontal"
+                        app:layout_row="3" />
+
+                    <ImageView
+                        android:id="@+id/button_bg7"
+                        android:layout_width="86dp"
+                        android:layout_height="34dp"
+                        android:layout_marginBottom="15dp"
+                        android:backgroundTint="#00FFFFFF"
+                        android:contentDescription="buttonbg7"
+                        app:layout_column="0"
+                        app:layout_gravity="bottom|center_horizontal"
+                        app:layout_row="3"
+                        app:srcCompat="@drawable/bg_button" />
+
+                    <TextView
+                        android:id="@+id/button_text7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:contentDescription="lihat"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="lihat"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        app:layout_column="0"
+                        app:layout_gravity="bottom|center_horizontal"
+                        app:layout_row="3" />
+
+                    <ImageView
+                        android:id="@+id/ring7"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginBottom="82dp"
+                        android:contentDescription="ring7"
+                        app:layout_column="0"
+                        app:layout_gravity="bottom|center_horizontal"
+                        app:layout_row="3"
+                        app:srcCompat="@drawable/ring" />
+
+                    <ImageView
+                        android:id="@+id/box8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="20dp"
+                        android:contentDescription="box8"
+                        app:layout_column="1"
+                        app:layout_row="3"
+                        app:srcCompat="@drawable/square"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="59dp"
+                        android:layout_height="59dp"
+                        android:layout_marginStart="75dp"
+                        android:layout_marginBottom="85dp"
+                        android:contentDescription="imageview8"
+                        app:layout_column="1"
+                        app:layout_gravity="bottom"
+                        app:layout_row="3"
+                        app:srcCompat="@drawable/gambar_contoh" />
+
+                    <ImageView
+                        android:id="@+id/ring8"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginStart="72dp"
+                        android:layout_marginBottom="82dp"
+                        android:contentDescription="ring8"
+                        app:layout_column="1"
+                        app:layout_gravity="bottom"
+                        app:layout_row="3"
+                        app:srcCompat="@drawable/ring" />
+
+                    <TextView
+                        android:id="@+id/aktiviti8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:layout_marginBottom="55dp"
+                        android:contentDescription="aktiviti8"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="aktiviti 8"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        app:layout_column="1"
+                        app:layout_gravity="bottom"
+                        app:layout_row="3" />
+
+                    <ImageView
+                        android:id="@+id/button_bg8"
+                        android:layout_width="86dp"
+                        android:layout_height="34dp"
+                        android:layout_marginStart="63dp"
+                        android:layout_marginBottom="15dp"
+                        android:contentDescription="button_bg8"
+                        app:layout_column="1"
+                        app:layout_gravity="bottom"
+                        app:layout_row="3"
+                        app:srcCompat="@drawable/bg_button" />
+
+                    <TextView
+                        android:id="@+id/buttontext8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginBottom="20dp"
+                        android:contentDescription="lihat"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="lihat"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        app:layout_column="1"
+                        app:layout_gravity="bottom"
+                        app:layout_row="3" />
+
+                </androidx.gridlayout.widget.GridLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
+

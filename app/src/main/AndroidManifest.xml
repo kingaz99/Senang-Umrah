@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.senangumrah">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/icon_su"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_su"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SenangUmrah"
+        tools:targetApi="31">
+        <activity
+            android:name=".Test"
+            android:exported="false" />
+        <activity
+            android:name=".DoaContent"
+            android:exported="false" />
+        <activity
+            android:name=".DoaHome"
+            android:exported="false" />
+        <activity
+            android:name=".HomeMenu"
+            android:exported="false" />
+        <activity
+            android:name=".TempatZiarahContent"
+            android:exported="false" />
+        <activity
+            android:name=".TempatZiarahHome"
+            android:exported="false" />
+        <activity
+            android:name=".AmalanSelepasContent"
+            android:exported="false"
+            android:label="@string/title_activity_amalan_selepas_content"
+            android:theme="@style/Theme.SenangUmrah.NoActionBar" />
+        <activity
+            android:name=".AmalanSelepasHome"
+            android:exported="false" />
+        <activity
+            android:name=".AmalanSemasaHome"
+            android:exported="false"
+            android:label="@string/title_activity_amalan_semasa_home"
+            android:theme="@style/Theme.SenangUmrah.NoActionBar" />
+        <activity
+            android:name=".PersediaanHome"
+            android:exported="false"
+            android:label="@string/title_activity_persediaan_home"
+            android:theme="@style/Theme.SenangUmrah.NoActionBar" />
+        <activity
+            android:name=".KursusHome"
+            android:exported="false" />
+        <activity
+            android:name=".ArtikelContent"
+            android:exported="false" />
+        <activity
+            android:name=".ArtikelHome"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

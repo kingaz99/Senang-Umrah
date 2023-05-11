@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TempatZiarahContent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/overlay" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="340dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+
+                <FrameLayout
+                    android:id="@+id/frameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <VideoView
+                        android:id="@+id/videoTempatZiarah"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_marginTop="10dp"/>
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:justificationMode="inter_word"
+                    android:text="Lazimnya, bakal tetamu Allah SWT yang kali pertama mahu berangkat ke Tanah Suci untuk menunaikan ibadat umrah sering bertanya mengenai pakaiaan dan barangan yang perlu dibawa ke Makkah dan Madinah sepanjang tempoh beribadat.Sebagaimana lumrah, telekung dan ihram adalah keperluan yang tidak lagi perlu dinyatakan kerana jemaah sedia maklum dengan kegunaan kedua-duanya. Namun, jumlah pakaian, sama ada baju kurung atau jubah, baju tidur, tuala dan seluar panjang menjadi persoalan.Namun, tidak ramai yang bertanya sama ada perlu membawa peralatan mandian dan penjagaan diri ketika di Tanah Suci kerana menyangka barangan keperluan itu disediakan oleh pengurusan hotel. Lazimnya, bakal tetamu Allah SWT yang kali pertama mahu berangkat ke Tanah Suci untuk menunaikan ibadat umrah sering bertanya mengenai pakaiaan dan barangan yang perlu dibawa ke Makkah dan Madinah sepanjang tempoh beribadat.Sebagaimana lumrah, telekung dan ihram adalah keperluan yang tidak lagi perlu dinyatakan kerana jemaah sedia maklum dengan kegunaan kedua-duanya. Namun, jumlah pakaian, sama ada baju kurung atau jubah, baju tidur, tuala dan seluar panjang menjadi persoalan.Namun, tidak ramai yang bertanya sama ada perlu membawa peralatan mandian dan penjagaan diri ketika di Tanah Suci kerana menyangka barangan keperluan itu disediakan oleh pengurusan hotel."
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/buttonbackactivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027"
+        app:srcCompat="@drawable/buttonback" />
+
+    <ImageView
+        android:id="@+id/navigation_button_tempat_ziarah_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027"
+        app:srcCompat="@drawable/menubutton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

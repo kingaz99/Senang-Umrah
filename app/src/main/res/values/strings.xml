@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Senang Umrah</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_artikelhome">Artikelhome</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_persediaan_home">PersediaanHome</string>
+    <string name="title_activity_amalan_semasa_home">AmalanSemasaHome</string>
+    <string name="title_activity_amalan_selepas_content">AmalanSelepasContent</string>
+    <string name="chapter_textview" />
+    <string name="thumbnail" />
+
+
+
+    <string name="doa">Doa</string>
+    <string name="back_button" />
+    <string name="nav_button" />
+    <string name="topics_tv">Topics Textview</string>
+    <string name="bismillah">بِسْمِ اللهِ الرَّحْمَـٰنِ الرَّحِيمِ</string>
+    <string name="isi_doa">سُبْحَانَ الَّذِى سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ، وَإِنَّا إِلَى رَبِّنَا لَمُنْقَلِبُونَ</string>
+    <string name="maksud_doa">Segala puji bagi Allah, Maha suci tuhan yang telah memudahkan kenderaan ini untuk kami, sedang kami sebelum ini tidak terdaya menguasainya.</string>
+    <string name="playSound" />
+    <string name="pauseSound" />
+</resources>
